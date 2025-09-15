@@ -4,7 +4,9 @@ import styles from './Hero.module.css'
 const Hero = () => {
   return (
     <>
-    <div>Hello</div>
+    <div className={styles.supportText}>
+                  <p>Hello</p>
+                </div>
     </>
   )
 }
