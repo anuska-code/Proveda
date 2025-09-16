@@ -165,6 +165,12 @@
 }
 
 @media (max-width: 1080px) {
+  .topContainer,
+  .navbarContainer {
+    width: 100%;
+    padding: 1rem 1rem;
+  }
+
   .navContent {
     gap: 1rem;
     padding: 1rem 0;

@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "image": "/images/ContactUs.png.png"
+  },
+  {
+    "id": 2,
+    "image": "/images/Loyalty.png.png"
+  },
+  {
+    "id": 3,
+    "image": "/images/Offer.png.png"
+    
+  },
+  {
+    "id": 4,
+  "image": "/images/Activation.png.png"
+  }
+]
