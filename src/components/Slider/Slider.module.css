@@ -1,5 +1,6 @@
 .sliderwrap {
   width: 100%;
+height:85vh;
   box-sizing: border-box;
    background-color: #f9f6f6;
 }
@@ -7,31 +8,34 @@
 .sliderContainer {
   position: relative;
   width: 100%;
+  height:85vh;
   margin: auto;
   overflow: hidden;
 }
 
 .slideWrapper {
   width: 100%;
-  height: 80vh;
+ height:85vh;
   position: relative;
 }
 
 .slideContent {
-  min-height: 80vh;
+  /* min-height: 85vh; */
   margin: auto;
   align-items: center;
   position: absolute;  
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height:85vh;
+  
   /* display: flex;
   justify-content: center; */
 }
 
 .slideImage {
-  width: 100%;;
+  width: 100%;
+  height:85vh;
   object-fit: cover;
   /* padding: 1rem 1rem; */
   display: block;
@@ -72,10 +76,11 @@
     width: 100%;
   }
 
-  /* .slideWrapper {
-    width:100%;
-    height: 250px;
-  } */
+  .slideWrapper {
+  
+  height: 42vh;
+
+}
   .navButton {
    
     padding: 0.3rem 0.6rem;
@@ -88,7 +93,7 @@
   }
 
   .slideWrapper {
-    height: 250px;
+    height: 31vh
   }
   .navButton {
     
@@ -102,7 +107,7 @@
   }
 
   .slideWrapper {
-    height: 180px;
+    height: 15vh;
   }
   .navButton {
     

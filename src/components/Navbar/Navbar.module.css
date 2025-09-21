@@ -36,7 +36,6 @@
 
 .socialIcons {
   display: flex;
-  
   gap: 1.75rem;
 }
 
@@ -67,7 +66,6 @@
 
 .navbarContainer {
   width: 80%;
- 
   margin: auto;
   /* padding: 0 1rem; */
 }
@@ -90,40 +88,51 @@
 .logoImage {
   /* width: 80%;
   height: 5vh; */
-  
   object-fit: contain;
 }
 
-/* Navigation Links */
+/* Navigation Links - Updated with green text and blue underline effect */
 .navigationLinks {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   flex: 1;
   justify-content: center;
 }
 
 .navLink {
   text-decoration: none;
-  color: #4285f4;
+  color: #3A6EAB;
   font-size: 1.8rem;
   font-weight: 600;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   position: relative;
+  padding: 0.5rem 0;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3A6EAB;
+  transition: width 0.3s ease;
 }
 
 .navLink:hover {
-  color: #1a73e8;
+  color: #28a745;
 }
 
 .navLink:hover::after {
-  content: '';
-  position: absolute;
-  bottom: -0.25rem;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #1a73e8;
+  width: 100%;
+}
+
+/* Optional: Add active state for current page */
+.navLink.active::after {
+  width: 100%;
+  background-color: #3A6EAB;
 }
 
 /* Action Section */
@@ -134,32 +143,45 @@
   flex-shrink: 0;
 }
 
-
-
 .loginButton {
   background-color: #AEBEB1;
-  color: #265AA4;
+  color: #3A6EAB;
   border: none;
-  padding: 1rem 1rem;
+  padding: 1rem 3rem;
   border-radius: 10px;
   font-size: 1.8rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.2s ease;
-  
+  transition: all 0.3s ease;
   letter-spacing: 0.025em;
+  text-decoration: none;  
+  display: inline-block;
+  position: relative;
+}
+
+.loginButton::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3A6EAB;
+  transition: width 0.3s ease;
 }
 
 .loginButton:hover {
-  background-color: #218838;
-  transform: translateY(-1px);
-  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+  color: #28a745;
+}
+
+.loginButton:hover::after {
+  width: 100%;
 }
 
 .hamburger {
   display: none;
   cursor: pointer;
-  color: #4285f4;
+  color: #3A6EAB;
   margin-left: 1rem;
   z-index: 1000;
 }
@@ -208,7 +230,7 @@
     gap: 1rem;
     padding: 1rem 1rem;
     display: flex;
-    justify-content: space-between; /* from hamburger css */
+    justify-content: space-between;
   }
 
   .navigationLinks {
@@ -216,8 +238,6 @@
     gap: 1.5rem;
     justify-content: center;
     width: 100%;
-
-    /* hamburger dropdown styles */
     position: absolute;
     top: 8vh;
     left: 0;
@@ -243,7 +263,6 @@
   .actionSection {
     order: 2;
     margin:auto;
-    /* justify-content: center; */
   }
 
   .logoSection {
@@ -256,8 +275,6 @@
   }
 }
 
-
-
 @media (max-width: 425px) {
   .topContainer,
   .navbarContainer {
@@ -266,14 +283,12 @@
   }
   
   .supportBar {
-    
     gap: 1.5rem;
     text-align: center;
     padding: 0.75rem ;
   }
   
   .navContent {
-    /* flex-direction: column; */
     gap: 1rem;
     padding: 1rem 1rem;
   }
@@ -300,12 +315,12 @@
   }
 
   .socialIcon {
-  width: 80%;
-  margin: auto;
-  height: 2.2vh;
-  object-fit: contain;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  opacity: 0.8;
-}
+    width: 80%;
+    margin: auto;
+    height: 2.2vh;
+    object-fit: contain;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 0.8;
+  }
 }

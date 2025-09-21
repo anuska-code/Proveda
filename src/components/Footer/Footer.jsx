@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,11 +12,11 @@ const Footer = () => {
             <h3 className={styles.sectionTitle}>Navigations</h3>
           </div>
           <div className={styles.linksList}>
-             <div className={styles.link}>
-            <a href="/" className={styles.footerLink}>Home</a>
-            <a href="/products" className={styles.footerLink}>Products</a>
-            <a href="/about" className={styles.footerLink}>About Us</a>
-            <a href="/contact" className={styles.footerLink}>Contact Us</a>
+            <div className={styles.link}>
+              <a href="/" className={styles.footerLink}>Home</a>
+              <a href="/products" className={styles.footerLink}>Products</a>
+              <a href="/about" className={styles.footerLink}>About Us</a>
+              <a href="/contact" className={styles.footerLink}>Contact Us</a>
             </div>
           </div>
         </div>
@@ -26,21 +27,18 @@ const Footer = () => {
             <h3 className={styles.sectionTitle}>Follow Us</h3>
           </div>
           <div className={styles.socialIcons}>
-            <img 
-              src="/images/insta (1).png" 
-              alt="Instagram" 
-              className={styles.socialIcon} 
-            />
-            <img 
-              src="/images/fb.png" 
-              alt="Facebook" 
-              className={styles.socialIcon} 
-            />
-            <img 
-              src="/images/twitter.png" 
-              alt="Twitter" 
-              className={styles.socialIcon} 
-            />
+             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+              <FaFacebook className={styles.iconSvg} />
+            </a>
+            
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+              <FaInstagram className={styles.iconSvg} />
+            </a>
+           
+           
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={styles.socialIcon}>
+              <FaLinkedin className={styles.iconSvg} />
+            </a>
           </div>
         </div>
 

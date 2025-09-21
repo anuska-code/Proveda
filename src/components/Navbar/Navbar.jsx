@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { FaBars, FaTimes } from "react-icons/fa"; // hamburger + close icons
+import { Link } from "react-router-dom"; // ✅ for navigation
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       {/* Top Support Bar */}
-      <div className={styles.topWrapper}>
+      {/* <div className={styles.topWrapper}>
         <div className={styles.topContainer}>
           <div className={styles.supportBar}>
             <div className={styles.supportText}>
@@ -39,7 +40,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Navbar */}
       <div className={styles.navbarWrapper}>
@@ -47,11 +48,13 @@ const Navbar = () => {
           <div className={styles.navContent}>
             {/* Logo Section */}
             <div className={styles.logoSection}>
+              <Link to="/"> 
               <img
-                src="/images/provedalogo.png"
+                src="\images\Provedalogo.png"
                 alt="Proveda Logo"
                 className={styles.logoImage}
               />
+               </Link>
             </div>
 
             {/* Navigation Links */}
@@ -60,30 +63,31 @@ const Navbar = () => {
                 isMenuOpen ? styles.showMenu : ""
               }`}
             >
-              <a href="/" className={styles.navLink}>
+              <Link to="/" className={styles.navLink}>
                 Home
-              </a>
-              <a href="/products" className={styles.navLink}>
+              </Link>
+              <Link to="/products" className={styles.navLink}>
                 Products
-              </a>
-              <a href="/about" className={styles.navLink}>
+              </Link>
+              <Link to="/about" className={styles.navLink}>
                 About Us
-              </a>
+              </Link>
             </div>
 
             {/* Right Side Actions */}
             <div className={styles.actionSection}>
-              <button className={styles.loginButton}>Contact Us</button>
+              <Link to="/contact" className={styles.loginButton}>
+                Contact Us
+              </Link>
             </div>
 
             {/* Hamburger Icon (Mobile only) */}
-          <div
-  className={`${styles.hamburger} ${isMenuOpen ? styles.open : ""}`}
-  onClick={toggleMenu}
->
-  {isMenuOpen ? <FaTimes size={24} color="red" /> : <FaBars size={24} />}
-</div>
-
+            <div
+              className={`${styles.hamburger} ${isMenuOpen ? styles.open : ""}`}
+              onClick={toggleMenu}
+            >
+              {isMenuOpen ? <FaTimes size={24} color="red" /> : <FaBars size={24} />}
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,8 @@
+[
+  { "id": 1, "title": "Consumer Base", "image": "/images/Customer.png" },
+  { "id": 2, "title": "Fastest", "image": "/images/Fastest.png" },
+  { "id": 3, "title": "Pricing", "image": "/images/Pricing.png" },
+  { "id": 4, "title": "Strong System", "image": "/images/System.png" },
+  { "id": 5, "title": "Travel the world with Proveda", "image": "/images/travel.png" },
+  { "id": 6, "title": "Success Plan", "image": "/images/Success.png" }
+]

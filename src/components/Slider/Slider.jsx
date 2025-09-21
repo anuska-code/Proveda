@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import sliderData from './sliderdata.json';
-
 import styles from './Slider.module.css';
 
 const Slider = () => {
