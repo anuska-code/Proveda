@@ -50,7 +50,7 @@ const Navbar = () => {
             <div className={styles.logoSection}>
               <Link to="/"> 
               <img
-                src="\images\Provedalogo.png"
+                src="\images\UpdatedLogo.png"
                 alt="Proveda Logo"
                 className={styles.logoImage}
               />

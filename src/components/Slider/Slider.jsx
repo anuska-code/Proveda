@@ -23,33 +23,49 @@ const Slider = () => {
   return (
     <div className={styles.sliderwrap}>
       <div className={styles.sliderContainer}>
-        <button onClick={prevSlide} className={`${styles.navButton} ${styles.prevBtn}`}>
+        {/* <button onClick={prevSlide} className={`${styles.navButton} ${styles.prevBtn}`}>
           ❮
-        </button>
+        </button> */}
 
         <div className={styles.slideWrapper}>
           <AnimatePresence mode="auto">
             <motion.div
               key={index}
               className={styles.slideContent}
-              initial={{ opacity: 0, x: 100 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5 }}
+              // initial={{ opacity: 0, x: 100 }}
+              // animate={{ opacity: 1, x: 0 }}
+              // exit={{ opacity: 0, x: -100 }}
+              // transition={{ duration: 0.5 }}
             >
               <img
-                src={sliderData[index].image}
+                src="\images\backgroundcover.png"
                 alt={`Slide ${sliderData[index].id}`}
                 className={styles.slideImage}
+                style={{
+                  position:"relative"
+                }}
               />
               {/* Removed title because your data has no title */}
             </motion.div>
           </AnimatePresence>
         </div>
 
-        <button onClick={nextSlide} className={`${styles.navButton} ${styles.nextBtn}`}>
+        <p style={{
+          color: "white",
+          fontSize: "2.5rem",
+          fontWeight: "500",
+          position: "absolute",
+          left: "22%",
+          
+          top: "80%",
+          width: "100%"
+          
+        }}>
+          "Empowering Lives Through Excellence , Innovation , And Growth. "
+        </p>
+        {/* <button onClick={nextSlide} className={`${styles.navButton} ${styles.nextBtn}`}>
           ❯
-        </button>
+        </button> */}
       </div>
     </div>
   );

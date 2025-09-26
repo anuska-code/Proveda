@@ -1,9 +1,8 @@
 .wrapper {
   width: 100%;
-  padding: 1rem 1rem ;
-  background-color: #f9f6f6;
+  padding: 4rem 1rem;
+  background-color: #faf6f6;
   box-sizing: border-box;
-  /* height:75vh; */
 }
 
 .container {
@@ -13,10 +12,10 @@
 
 .sectionBtn {
   display: block;
-  margin: 0 auto 1.5rem;
-  padding: 1.5rem 2.5rem;
-  border: 1.5px solid #386eab;
-  border-radius: 15px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 30px;
   background: transparent;
   color: #386eab;
   font-size: 2.5rem;
@@ -25,30 +24,28 @@
 }
 
 .subHeading {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   font-weight: 400;
   color: #000;
-  text-align: left;
-  margin-bottom: 2rem;
-  margin-left: 0.95rem;
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .cardGrid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* ✅ 3 cards per row */
-  gap: 2rem;
-  justify-items: center; /* ✅ center cards in each cell */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  justify-items: center;
 }
 
 .card {
-   width: 100%;          /* take full width of grid cell */
-  max-width: 391px;     /* don’t grow bigger than design size */
-  height: auto;    
+  width: 100%;
+  max-width: 400px;
   background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -114,83 +111,78 @@
 
 /* Medium screens ≤1080px → 2 cards per row */
 @media (max-width: 1080px) {
-.wrapper{
-  
-  padding: 0;
-}
+  .wrapper {
+    padding: 3rem 1rem;
+  }
 
   .container {
-    width: 100%;
+    width: 95%;
   }
+
   .cardGrid {
-    padding: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2.5rem;
-  }
-  .subHeading {
-    margin-left: 2.95rem;
   }
 }
 
 /* Tablets ≤768px → 1 card per row */
 @media (max-width: 768px) {
-/* .wrapper{
-  height: 80vh;
-} */
+  .wrapper {
+    padding: 2rem 1rem;
+  }
 
-.container {
-  width: 100%;
-  
-}
-
+  .container {
+    width: 100%;
+  }
 
   .sectionBtn {
     padding: 1.2rem 2rem;
-  }
-
-  .subHeading {
-    margin-left: 2.95rem;
+    font-size: 2rem;
   }
 
   .cardGrid {
-    padding: 2rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
-  /* .card {
+  .card {
     max-width: 100%;
-    height: auto;
-  } */
+  }
 }
 
 /* Mobile ≤420px */
 @media (max-width: 420px) {
+  .wrapper {
+    padding: 1.5rem 0.5rem;
+  }
 
-  /* .wrapper{
-  height: 90vh;
-} */
-
-.container {
-  width: 100%;
-  
-}
+  .container {
+    width: 100%;
+  }
 
   .sectionBtn {
     padding: 1rem 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .subHeading {
+    font-size: 1.8rem;
+  }
+
+  .cardGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .card {
-    /* width: 100%; */
-    padding: 1rem;
+    padding: 1.5rem;
   }
 
-
-   .cardGrid {
-    padding: 2rem;
-    grid-template-columns: 1fr;
+  .reviewText {
+    font-size: 1.4rem;
   }
 
-
-  .subHeading {
-    margin-left: 2.95rem;
+  .profileName {
+    font-size: 1.4rem;
   }
 }

@@ -1,6 +1,6 @@
 .contactWrapper {
   width: 100%;
-  background-color: #f9f6f6;
+  background-color: #faf6f6;
   padding: 0 1.5rem;
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@
 
 .headerTitle {
 
-  font-size: 3.2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   margin: auto;
   color: #3a6eab;
@@ -29,7 +29,7 @@
 /* Two-column layout */
 .contentSection {
   display: flex;
-  gap: 5rem;
+  gap: 4rem;
   margin-top: 3rem;
   flex-wrap: wrap;
   padding: 3rem 1rem;
@@ -38,39 +38,54 @@
 
 /* Form Section (Left) */
 .formSection {
-  height:670px;
   flex: 1 1 45%;
   background: #fff;
   padding: 2.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
+  border-radius: 1.25rem;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
 
 .formTitle {
   font-size: 2.8rem;
   font-weight: 500;
   margin-bottom: 2rem;
-  color: #000;
+  color: #396eab;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  gap: 4.8rem;
+  gap: 2rem;
+}
+
+.formRow {
+  display: flex;
+  gap: 2rem;
 }
 
 .formGroup {
   display: flex;
   flex-direction: column;
+  flex: 1;
+}
+
+.label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 0.8rem;
+}
+
+.required {
+  color: #dc3545;
 }
 
 .input,
 .textarea {
-  padding: 2rem;
-  border: 1px solid #000;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
   border-radius: 0.4rem;
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.4rem;
+  font-weight: 400;
   outline: none;
   transition: border-color 0.3s ease;
   box-sizing: border-box;
@@ -83,6 +98,7 @@
 
 .textarea {
   resize: none;
+  min-height: 120px;
 }
 
 .error {
@@ -123,7 +139,7 @@
 .infoTitle {
   font-size: 2.8rem;
   font-weight: 500;
-  color: #2c5cc5;
+  color: #396eab;
   margin-bottom: 1rem;
 }
 
@@ -151,14 +167,14 @@
 
 .icon {
   font-size: 2.5rem;
-  color: #3a6eab;
+  color: #396eab;
 }
 
 /* ✅ New styles for replaced h4 */
 .stylesText {
   font-size: 2rem;
   font-weight: 500;
-  color: #2c5cc5;
+  color: #396eab;
   margin-bottom: 0.3rem;
 }
 
@@ -183,18 +199,18 @@
     width: 100%;
   }
   .contentSection {
-    /* flex-direction: column-reverse; */
+    flex-direction: column;
     padding: 2rem 1rem;
-    gap: 4rem;
-    
+    gap: 3rem;
   }
+
   .formSection {
-    width: 100%;
- 
+    flex: 1 1 100%;
     padding: 1.5rem;
   }
+
   .infoSection {
-   
+    flex: 1 1 100%;
     padding: 0;
   }
 }
@@ -205,18 +221,30 @@
   }
 
   .formSection {
-    height: auto;
-    padding: 1rem;
+    padding: 1.5rem;
+  }
+
+  .formRow {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .label {
+    font-size: 1.4rem;
+  }
+
+  .input,
+  .textarea {
+    padding: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .contentSection {
-    /* flex-direction: column-reverse; */
     padding: 2rem 1rem;
-    gap: 4rem;
+    gap: 3rem;
     margin-top: 0;
   }
-  
- 
+
   .mapWrapper iframe {
     height: 220px;
   }
@@ -228,21 +256,29 @@
   }
 
   .contentSection {
-    /* flex-direction: column-reverse; */
-    padding: 2rem 1rem;
-    gap: 4rem;
+    padding: 1.5rem 0.5rem;
+    gap: 2.5rem;
     margin-top: 0;
   }
-  
-  
+
   .formSection {
-    height: auto;
     padding: 1rem;
   }
+
+  .label {
+    font-size: 1.3rem;
+  }
+
   .input,
+  .textarea {
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+
   .submitButton {
     padding: 1rem;
   }
+
   .mapWrapper iframe {
     height: 180px;
   }

@@ -1,271 +1,248 @@
 .footerWrapper {
-  width:100%;
-  background: #fff;
-  padding: 2rem 1rem 1rem;
-  
+  width: 100%;
+  background: #faf6f6;
+  padding: 4rem 0 0;
 }
 
 .footerContainer {
-  width:80%;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
-  margin: auto;
-  /* text-align: left; */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
 }
 
-.logoSection {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.logo {
-  width: 50%;
-  margin-bottom: 0.5rem;
-}
-
-.brandName {
-  font-weight: 600;
-  color: #000;
-  line-height: 1.2;
-}
-
+/* Contact Us Title */
 .sectionTitle {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 0.8rem;
-  color: #000;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #3a6eac;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 
-.linksList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.footerLink {
-  text-decoration: none;
-  color: #386eab;
-  font-weight: 500;;
-  font-size: 1.8rem;
-}
-
-.footerLink:hover {
-  text-decoration: underline;
-}
-
-.socialIcons {
-  display: flex;
-  gap: 1rem;
-  font-size: 1.2rem;
-  color: #386eab;
-}
-
-.iconSvg {
-  font-size: 2.5rem;
-  color: #386eab;
-  transition: transform 0.2s ease;
-}
-
-.iconSvg:hover {
-  transform: scale(1.2);
-}
-
-/* Contact Section Styles */
+/* Contact Information Styles */
 .contactSection {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  margin-bottom: 3rem;
 }
 
 .contactItem {
-  display: flex;
-  align-items: baseline;
-  gap: 0.8rem;
-}
-
-.contactIcon {
-  font-size: 1.2rem;
-  color: #386eab;
-  margin-top: 0.2rem;
-  flex-shrink: 0;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
 .contactLabel {
   font-size: 1.8rem;
-  font-weight: 600;
-  color: #386eab;
-  margin: 0 0 0.2rem 0;
+  font-weight: 400;
+  color: #396eab;
+  margin-bottom: 0.5rem;
+  display: block;
 }
 
 .contactValue {
-  font-size: 1.5rem;
-  color: #000;
+  font-size: 1.6rem;
+  color: #333;
   margin: 0;
-  line-height: 1.3;
+  line-height: 1.4;
+}
+
+.contactIcon {
+  display: none;
+}
+
+/* Social Media Icons */
+.socialSection {
+  margin-bottom: 4rem;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+  transform: translateY(-3px);
+}
+
+.iconSvg {
+  font-size: 3rem;
+  transition: all 0.3s ease;
+}
+
+.iconSvg:hover {
+  transform: scale(1.1);
+}
+
+/* Platform-specific colors */
+.instagramIcon {
+  color: #E4405F;
+}
+
+.instagramIcon:hover {
+  color: #C13584;
+}
+
+.facebookIcon {
+  color: #1877F2;
+}
+
+.facebookIcon:hover {
+  color: #166FE5;
+}
+
+.twitterIcon {
+  color: #000000;
+}
+
+.twitterIcon:hover {
+  color: #333333;
+}
+
+/* Hide unused sections */
+.logoSection,
+.navigationSection,
+.policiesSection {
+  display: none;
 }
 
 .copyrightSection {
-  margin-top: 1rem;
+  padding: 2rem;
   text-align: center;
   font-size: 1.6rem;
-  border-top: 1px solid #3A6EAB;
-  padding-top: 0.8rem;
-  color: #555;
+  background-color: #4a90e2;
+  color: white;
+  margin-top: 2rem;
+}
+
+.copyrightSection p {
+  margin: 0;
+  font-weight: 400;
 }
 
 .devLink {
-  color: orange;
-  font-weight: 500;
+  color: #ffa500;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-/* Responsive */
-/* Keep horizontal layout until 768px */
-@media (max-width: 1080px) and (min-width: 769px) {
-  .footerContainer {
-    width: 100%;
-    gap: 1.2rem;
-  }
-  
-  .sectionTitle {
-    
-    margin-bottom: 0.6rem;
-  }
-  
-  
-  
-  .logo {
-    width: 60%;
-  }
+.devLink:hover {
+  color: #ff8c00;
+  text-decoration: underline;
 }
 
-/* Tablet and below 768px - Keep horizontal layout but smaller */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .footerWrapper {
-    padding: 1rem 0.5rem 1rem;
+  .footerWrapper {
+    padding: 3rem 0 0;
   }
-  
+
   .footerContainer {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 3rem;
+    padding: 0 1rem;
   }
-  
-  .logoSection {
-    align-items: flex-start;
-  }
-  
-  .logo {
-    width: 20%;
-    margin-bottom: 0.3rem;
-  }
-  
+
   .sectionTitle {
-   
-    margin-bottom: 0.3rem;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
-  
-  .footerLink {
-   
-    padding: 0.1rem 0;
+
+  .contactLabel {
+    font-size: 1.6rem;
   }
-  
 
   .contactValue {
-    
-    line-height: 1.1;
+    font-size: 1.4rem;
   }
-  
- 
-  
+
   .socialIcons {
-    gap: 0.5rem;
+    gap: 1.5rem;
   }
-  
-  .contactItem {
-    gap: 0.3rem;
-    margin-bottom: 0.4rem;
+
+  .iconSvg {
+    font-size: 2.5rem;
   }
-  
-  
-  
+
+  .instagramIcon {
+    font-size: 2.5rem;
+  }
+
+  .facebookIcon {
+    font-size: 2.5rem;
+  }
+
+  .twitterIcon {
+    font-size: 2.5rem;
+  }
+
   .copyrightSection {
-    
-    padding-top: 0.6rem;
-    line-height: 1.4;
+    padding: 1.5rem;
+    font-size: 1.4rem;
   }
-  
-  .copyrightSection p {
-    margin: 0.2rem 0;
-  }
-  
- 
 }
 
-/* Mobile and below 420px - Still try to maintain horizontal layout */
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .footerWrapper {
-    padding: 1rem 0.5rem 1rem;
+    padding: 2rem 0 0;
   }
-  
+
   .footerContainer {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 3rem;
+    padding: 0 1rem;
   }
-  
-  .logoSection {
-    align-items: flex-start;
-  }
-  
-  .logo {
-    width: 20%;
-    margin-bottom: 0.3rem;
-  }
-  
+
   .sectionTitle {
-   
-    margin-bottom: 0.3rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
   }
-  
-  .footerLink {
-   
-    padding: 0.1rem 0;
+
+  .contactItem {
+    margin-bottom: 1.5rem;
   }
-  
+
+  .contactLabel {
+    font-size: 1.4rem;
+  }
 
   .contactValue {
-    
-    line-height: 1.1;
+    font-size: 1.2rem;
+    line-height: 1.3;
   }
-  
- 
-  
+
+  .socialSection {
+    margin-bottom: 2rem;
+  }
+
   .socialIcons {
-    gap: 0.5rem;
+    gap: 1rem;
   }
-  
-  .contactItem {
-    gap: 0.3rem;
-    margin-bottom: 0.4rem;
+
+  .iconSvg {
+    font-size: 2rem;
   }
-  
-  
-  
+
+  .instagramIcon {
+    font-size: 2rem;
+  }
+
+  .facebookIcon {
+    font-size: 2rem;
+  }
+
+  .twitterIcon {
+    font-size: 2rem;
+  }
+
   .copyrightSection {
-    
-    padding-top: 0.6rem;
-    line-height: 1.4;
+    padding: 1rem;
+    font-size: 1.2rem;
   }
-  
+
   .copyrightSection p {
-    margin: 0.2rem 0;
+    line-height: 1.4;
   }
 }

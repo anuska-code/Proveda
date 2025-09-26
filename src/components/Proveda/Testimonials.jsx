@@ -24,7 +24,7 @@ const Testimonials = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <button className={styles.sectionBtn}>TESTIMONIALS</button>
-        <div className={styles.subHeading}>Clients Review</div>
+        <div className={styles.subHeading} style={{ textAlign: "center" }}>Clients Review</div>
 
         <motion.div
           className={styles.cardGrid}
@@ -37,6 +37,7 @@ const Testimonials = () => {
             <motion.div
               key={i}
               className={styles.card}
+              
               variants={fadeInUp}
             >
               <div className={styles.quoteIcon}>

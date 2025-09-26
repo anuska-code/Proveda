@@ -1,6 +1,6 @@
 .sliderwrap {
   width: 100%;
-  height:82vh;
+  height:70vh;
   box-sizing: border-box;
    background-color: #f9f6f6;
 }
@@ -8,15 +8,18 @@
 .sliderContainer {
   position: relative;
   width: 100%;
-  height:82vh;
+  height:70vh;
   margin: auto;
-  overflow: hidden;
+     background-color: #f9f6f6;
+
 }
 
 .slideWrapper {
   width: 100%;
- height:82vh;
+ height:70vh;
   position: relative;
+     background-color: #f9f6f6;
+
 }
 
 .slideContent {
@@ -26,12 +29,13 @@
   top: 0;
   left: 0;
   width: 100%;
-  height:82vh;
+  height:70vh;
+  
 }
 
 .slideImage {
   width: 100%;
-  height:82vh;
+  height:70vh;
   object-fit: cover;
   display: block;
   margin: auto;       
