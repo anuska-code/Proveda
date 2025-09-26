@@ -1,185 +1,271 @@
-/* Footer.module.css */
-
-/* Footer Wrapper */
 .footerWrapper {
-  width: 100%;
-  background-color: #ffffff;
-  padding: 3rem 0 0 0;
+  width:100%;
+  background: #fff;
+  padding: 2rem 1rem 1rem;
+  
 }
 
-/* Footer Container */
 .footerContainer {
-  width: 80%;
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-between;
+  width:80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
+  margin: auto;
+  /* text-align: left; */
 }
 
-/* Section Styles */
-.navigationSection,
-.socialSection,
-.policiesSection {
+.logoSection {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  align-items: flex-start;
 }
 
-/* Section Headers */
-.sectionHeader {
-  padding-bottom: 0.5rem;
+.logo {
+  width: 50%;
+  margin-bottom: 0.5rem;
+}
+
+.brandName {
+  font-weight: 600;
+  color: #000;
+  line-height: 1.2;
 }
 
 .sectionTitle {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 600;
-  color: #212529;
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-
-/* Links List */
-.link {
-  padding: 0 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+  color: #000;
 }
 
 .linksList {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .footerLink {
-  color: #000; /* Black by default */
   text-decoration: none;
+  color: #386eab;
+  font-weight: 500;;
   font-size: 1.8rem;
-  font-weight: 400;
-  transition: color 0.2s ease;
-  line-height: 1.5;
 }
 
 .footerLink:hover {
-  color: #386eab; /* Brand color on hover */
   text-decoration: underline;
 }
 
-/* Social Icons */
 .socialIcons {
   display: flex;
-  gap: 1.75rem;
-  align-items: center;
-}
-
-.socialIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  opacity: 0.8;
-  color: #386eab; /* Brand color */
-}
-
-.socialIcon:hover {
-  opacity: 1;
-  transform: translateY(-2px) scale(1.1);
-  color: #2e5689; /* Slightly darker on hover */
+  gap: 1rem;
+  font-size: 1.2rem;
+  color: #386eab;
 }
 
 .iconSvg {
-  font-size: 2.3rem; /* controls react-icon size */
-  transition: all 0.3s ease;
-}
-
-/* Policies Section */
-.policiesSection a {
-  font-size: 1.8rem;
-  color: #000;
-  font-weight: 400;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-.policiesSection a:hover {
+  font-size: 2.5rem;
   color: #386eab;
-  text-decoration: underline;
+  transition: transform 0.2s ease;
 }
 
-/* Copyright Section */
-.copyrightSection {
-  padding: 1.5rem 0;
-  margin-top: 2rem;
+.iconSvg:hover {
+  transform: scale(1.2);
 }
 
-.copyrightContainer {
-  width: 100%;
-  margin: auto;
-  padding: 0 1rem;
-  text-align: center;
+/* Contact Section Styles */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.copyrightText {
+.contactItem {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+.contactIcon {
+  font-size: 1.2rem;
+  color: #386eab;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+}
+
+.contactLabel {
   font-size: 1.8rem;
-  font-weight: 400;
-  color: #000000;
-  margin: 0;
-  line-height: 1.4;
+  font-weight: 600;
+  color: #386eab;
+  margin: 0 0 0.2rem 0;
 }
 
-/* Responsive Styles */
+.contactValue {
+  font-size: 1.5rem;
+  color: #000;
+  margin: 0;
+  line-height: 1.3;
+}
 
-/* Desktop - 1080px */
-@media (max-width: 1080px) {
-  .footerWrapper {
-    padding: 4rem 0 0 0;
-  }
+.copyrightSection {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.6rem;
+  border-top: 1px solid #3A6EAB;
+  padding-top: 0.8rem;
+  color: #555;
+}
 
+.devLink {
+  color: orange;
+  font-weight: 500;
+}
+
+/* Responsive */
+/* Keep horizontal layout until 768px */
+@media (max-width: 1080px) and (min-width: 769px) {
   .footerContainer {
     width: 100%;
-    padding: 1rem 2rem;
-    margin: auto;
-    gap: 4rem;
+    gap: 1.2rem;
   }
+  
+  .sectionTitle {
+    
+    margin-bottom: 0.6rem;
+  }
+  
+  
+  
+  .logo {
+    width: 60%;
+  }
+}
 
+/* Tablet and below 768px - Keep horizontal layout but smaller */
+@media (max-width: 768px) {
+    .footerWrapper {
+    padding: 1rem 0.5rem 1rem;
+  }
+  
+  .footerContainer {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+  }
+  
+  .logoSection {
+    align-items: flex-start;
+  }
+  
+  .logo {
+    width: 20%;
+    margin-bottom: 0.3rem;
+  }
+  
+  .sectionTitle {
+   
+    margin-bottom: 0.3rem;
+  }
+  
+  .footerLink {
+   
+    padding: 0.1rem 0;
+  }
   
 
+  .contactValue {
+    
+    line-height: 1.1;
+  }
+  
+ 
+  
+  .socialIcons {
+    gap: 0.5rem;
+  }
+  
+  .contactItem {
+    gap: 0.3rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  
+  
   .copyrightSection {
-    padding: 2rem 0;
+    
+    padding-top: 0.6rem;
+    line-height: 1.4;
   }
+  
+  .copyrightSection p {
+    margin: 0.2rem 0;
+  }
+  
+ 
 }
 
-/* Tablet - 768px and below */
-@media (max-width: 768px) {
-  .footerContainer {
-    width: 100%;
-    padding: 1rem 1.75rem;
-    flex-direction: row;
-    gap: 2rem;
-  }
-}
-
-/* Small Mobile - 420px and below */
+/* Mobile and below 420px - Still try to maintain horizontal layout */
 @media (max-width: 420px) {
   .footerWrapper {
-    padding: 2rem 0 0 0;
+    padding: 1rem 0.5rem 1rem;
   }
-
+  
   .footerContainer {
-    padding: 1rem 1.75rem;
-    gap: 3.5rem;
+    padding: 2rem;
+    display: flex;
     flex-direction: column;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
   }
+  
+  .logoSection {
+    align-items: flex-start;
+  }
+  
+  .logo {
+    width: 20%;
+    margin-bottom: 0.3rem;
+  }
+  
+  .sectionTitle {
+   
+    margin-bottom: 0.3rem;
+  }
+  
+  .footerLink {
+   
+    padding: 0.1rem 0;
+  }
+  
 
+  .contactValue {
+    
+    line-height: 1.1;
+  }
+  
+ 
+  
+  .socialIcons {
+    gap: 0.5rem;
+  }
+  
+  .contactItem {
+    gap: 0.3rem;
+    margin-bottom: 0.4rem;
+  }
+  
+  
   
   .copyrightSection {
-    padding: 1.25rem 0;
+    
+    padding-top: 0.6rem;
+    line-height: 1.4;
   }
-
-  .copyrightText {
-    padding: 0 0.5rem;
+  
+  .copyrightSection p {
+    margin: 0.2rem 0;
   }
 }

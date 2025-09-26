@@ -2,14 +2,18 @@ import React from 'react'
 import styles from './Hero.module.css'
 import SliderMain from '../Slider/SliderMain'
 import Content from '../Content/Content'
-import ProvedaMain from '../Proveda/ProvedaMain'
+import TestimonialsMain from '../Proveda/TestimonialsMain'
+import ProductCategories from '../ProductCategories/ProductCategories'
+import Contact from '../Contact/Contact'
 
 const Hero = () => {
   return (
     <>
     <SliderMain/>
     <Content/>
-    <ProvedaMain/>
+    <ProductCategories/>
+    <Contact/>
+    <TestimonialsMain/>
     </>
   )
 }

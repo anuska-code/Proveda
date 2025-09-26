@@ -1,0 +1,48 @@
+{
+  "missionVision": [
+    {
+      "title": "Mission",
+      "description": "Our Mission is to be a force for good through out the world by empowering people to improve lives with rewarding business opportunities, innovative prod-ucts, and an enriching, uplifting culture.",
+      "icon": "/images/Mission.png"
+    },
+    {
+      "title": "Vision",
+      "description": "Our Vision is to ignite a global community to realize their best selves through opportunity, enrichment, celebration, and above all else, uplifting relationships.",
+      "icon": "/images/Vision.png"
+    },
+    {
+      "title": "Goal",
+      "description": "Our goal is to achieve sustainable growth by enhancing operational excellence, expanding nationwide, and fostering partner-ships that ensure success for both our company and clients.",
+      "icon": "/images/Goal.png"
+    }
+  ],
+  "team": {
+    "chairman": {
+      "name": "Mr. Arjun Pathak",
+      "role": "Chairman",
+      "image": "/images/Chairman.png"
+    },
+    "members": [
+      {
+        "name": "Mr. Rakesh Atteya",
+        "role": "Managing Director",
+        "image": "/images/Member1.png"
+      },
+      {
+        "name": "Mr. Bijay Kumar Yadav",
+        "role": "Director",
+        "image": "/images/Member2.png"
+      },
+      {
+        "name": "Mr. Pawan Aryal",
+        "role": "Director",
+        "image": "/images/Member3.png"
+      },
+      {
+        "name": "Mr. [Name]",
+        "role": "Director",
+        "image": "/images/Member4.png"
+      }
+    ]
+  }
+}

@@ -7,6 +7,7 @@ const Content = () => {
   return (
     <>
       <div className={styles.contentWrapper}>
+        
         {/* Enhanced Social Media Icons - Left Side */}
         <div className={styles.socialSidebar}>
           <div className={styles.socialIconsContainer}>
@@ -58,39 +59,46 @@ const Content = () => {
         {/* Main Content */}
         <div className={styles.contentBox}>
           <div className={styles.contentParagraph}>
-            At Proveda Nepal, we're not just growing fast — we're growing with purpose. As one of the fastest-growing direct selling companies in India, 
-            our goal has always been simple: to help people chase their dreams and actually achieve them.
+            Founded in 2076 B.S. and headquartered in Tilottama-6, Gorkatta, Rupandehi, Proveda Pvt. Ltd. 
+            has quickly emerged as one of the most trusted names in cosmetics and cleaning products 
+            in Nepal. From humble beginnings, our journey has been guided by a strong vision—to create 
+            world-class products that enhance beauty, promote hygiene, and improve everyday living for 
+            individuals and families alike.
+
           </div>
                      
           <div className={styles.contentParagraph}>
-            We're a team of passionate leaders, dreamers, and doers who believe that everyone deserves a chance to succeed. And over the years, 
-            we've seen people from all walks of life — students, homemakers, professionals — discover their strength, build their own business, and 
-            change their lives with us.
+            At Proveda, we believe that true quality is defined not only by effectiveness but also by safety, affordability, and sustainability. Every product we create is carefully researched, formulated, and tested to ensure that it meets the highest standards of care. From skincare and personal care to household cleaning solutions, our portfolio reflects our commitment to serving diverse customer needs while maintaining reliability and trust.
+
           </div>
                      
           <div className={styles.contentParagraph}>
-            It's not just about money. It's about confidence. It's about freedom. It's about rediscovering who you really are.
+            Over the years, our dedication to innovation, customer satisfaction, and social responsibility has helped us establish ourselves as one of the best cosmetic and cleaning brands in Nepal. We are proud to see our products being used in households across the country, making a positive impact on people’s lives and setting new benchmarks for quality and value.
+
           </div>
                      
           <div className={styles.contentParagraph}>
-            Take our SlimExpert, our most powerful product range like SlimExpert, which helps people take charge of their health and fitness 
-            in a smart, sustainable way. Whether it's losing weight, gaining muscle, or simply feeling better in your body — SlimExpert is making wellness 
-            simple and achievable.
+            Beyond business, Proveda is driven by a purpose—to contribute to community well-being, 
+            encourage sustainable practices, and empower local talent. Our success is deeply
+            rooted in the trust and loyalty of our customers, the hard work of our team, and 
+            the values of integrity, innovation, and service that guide us every day.
+
           </div>
                      
           <div className={styles.contentParagraph}>
-            And with Jom Vital, we're bringing the timeless power of Ayurvedic herbs to modern life — boosting stamina, energy, and overall vitality for 
-            those who want to feel their best every single day.
+            
+Our mission is simple yet powerful:<br/>
+To make every day healthier, cleaner, and more beautiful.
+
           </div>
                      
           <div className={styles.contentParagraph}>
-            These aren't just products. They're tools for transformation. And they're already helping thousands of people feel stronger, healthier, 
-            and more confident — inside and out.
+            
+As we look ahead, Proveda remains committed to growth, innovation, and excellence—continuing to bring confidence, care, and cleanliness to 
+every home in Nepal and beyond.
           </div>
                      
-          <div className={`${styles.contentParagraph} ${styles.lastParagraph}`}>
-            At Proveda, we're not just building a company. We're building a community where people grow, support each other, and rise together.
-          </div>
+         
         </div>
                        
       </div>

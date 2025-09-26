@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "SERUM",
+    "image": "/images/Serum.png"
+  },
+  {
+    "id": 2,
+    "name": "SHAMPOO",
+    "image": "/images/Shampoo.png"
+  },
+  {
+    "id": 3,
+    "name": "OIL",
+    "image": "/images/Oil.png"
+  },
+  {
+    "id": 4,
+    "name": "LOTION",
+    "image": "/images/Lotion.png"
+  }
+]

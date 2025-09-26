@@ -1,0 +1,155 @@
+.mainWrapper {
+  width: 100%;
+  /* height:65vh; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  background-color: #f9f6f6;
+  
+}
+
+.productwrap{
+    width: 80%;
+    margin: auto;
+  
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.titleWrapper {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  color: #3A6EAB;
+  font-weight: 500;
+}
+
+.cardContainer {
+    margin-left:2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+ 
+}
+
+.cardWrapper {
+        width: 250px;
+    height: 360px;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.cardWrapper:hover {
+  transform: translateY(-5px);
+}
+
+.imageWrapper {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  
+  width: 100%;
+  height: auto;
+}
+
+.textWrapper {
+  text-align: center;
+}
+
+.text {
+    font-size: 1.6rem;
+  color: #000;
+  font-weight: 500;
+}
+
+.buttonWrapper {
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+  margin-top: 2.5rem;
+}
+
+.button {
+    font-size: 1.6rem;
+    font-weight: 500;;
+  padding: 1.2rem 3rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #3A6EAB;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #084c96;
+}
+
+/* Responsive */
+@media (max-width: 1080px) {
+/* .mainWrapper{
+    height: 70vh;
+} */
+
+ .productwrap{
+    width: 100%;
+}
+
+.cardContainer {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+.productwrap{
+    width: 100%;
+}
+
+  .cardContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .cardWrapper {
+    width: 250px;
+   height:auto;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 1rem;
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s 
+ease;
+}
+}
+
+@media (max-width: 420px) {
+
+.productwrap{
+    width: 100%;
+}
+
+ .cardContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}

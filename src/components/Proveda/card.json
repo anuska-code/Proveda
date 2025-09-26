@@ -1,8 +1,38 @@
 [
-  { "id": 1, "title": "Consumer Base", "image": "/images/Customer.png" },
-  { "id": 2, "title": "Fastest", "image": "/images/Fastest.png" },
-  { "id": 3, "title": "Pricing", "image": "/images/Pricing.png" },
-  { "id": 4, "title": "Strong System", "image": "/images/System.png" },
-  { "id": 5, "title": "Travel the world with Proveda", "image": "/images/travel.png" },
-  { "id": 6, "title": "Success Plan", "image": "/images/Success.png" }
+  {
+    "id": 1,
+    "text": "Proveda Products Have Truly Transformed My Daily Routine. The Cosmetics Are Gentle, Long-Lasting, And Perfect For My Skin. I Trust Proveda For Both Beauty And Hygiene Needs.",
+    "name": "Anjali Sharma",
+    "location": "Butwal"
+  },
+  {
+    "id": 2,
+    "text": "The Cleaning Products Are Effective, Affordable, And Safe For My Family. I've Been Using Them For Months, And I Couldn't Be Happier With The Results.",
+    "name": "Ramesh K.C.",
+    "location": "Tilottama"
+  },
+  {
+    "id": 3,
+    "text": "Finally, A Nepali Brand That Matches International Quality! Proveda’s Cosmetics Are Natural, Refreshing, And Exactly What I Was Looking For.",
+    "name": "Sita Adhikari",
+    "location": "Kathmandu"
+  },
+  {
+    "id": 4,
+    "text": "What I Admire Most About Proveda Is Their Consistency. Every Product I've Tried Reflects The Same High Quality And Care. Highly Recommended.",
+    "name": "Prakash Thapa",
+    "location": "Pokhara"
+  },
+  {
+    "id": 5,
+    "text": "Proveda Combines Affordability With Excellence. The Cleaning Solutions Are Powerful Yet Safe, And The Cosmetics Are Elegant And Skin-Friendly.",
+    "name": "Bishnu Chaudhary",
+    "location": "Rupandehi"
+  },
+  {
+    "id": 6,
+    "text": "I Feel Proud To Support A Homegrown Brand Like Proveda. Their Focus On Innovation And Customer Satisfaction Makes Them One Of The Best In Nepal.",
+    "name": "Mina Koirala",
+    "location": "Chitwan"
+  }
 ]
