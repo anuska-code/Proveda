@@ -17,7 +17,7 @@ const Contact = () => {
       <div className={styles.contactContainer}>
         {/* Header */}
         <div className={styles.headerSection}>
-          <h2 className={styles.headerTitle}>Contact Us</h2>
+          <h2 className={styles.headerTitle}>Contact</h2>
         </div>
 
         {/* Two Column Section */}
