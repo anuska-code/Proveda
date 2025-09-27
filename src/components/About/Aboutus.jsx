@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Aboutus.module.css';
 import data from './data.json';
+import Content from '../Content/Content';
 
 const Aboutus = () => {
   return (
@@ -9,36 +10,33 @@ const Aboutus = () => {
       {/* Hero Section */}
       <div className={styles.heroWrapper}>
         <div className={styles.heroImageDiv}>
-          <img src="/images/Aboutus.png" alt="Business Strategy" className={styles.heroImage}/>
+          <img src="/images/Aboutuscover.png" alt="Business Strategy" className={styles.heroImage}/>
         </div>
       </div>
 
+      <Content/>
       {/* About Us Content, Mission, Vision, Team */}
       <div className={styles.aboutUswrap}>
 
         {/* About Us Text Section */}
         <div className={styles.aboutUsContent}>
+          <div className={styles.sectionHeaderDiv}>
+            <h2 className={styles.sectionTitle}>About Us</h2>
+          </div>
           <div className={styles.aboutUsTextSection}>
             <div className={styles.aboutUsLeft}>
-              <div className={styles.sectionHeaderDiv}>
-                <h2 className={styles.sectionTitle}>About Us</h2>
-              </div>
               <p className={styles.aboutUsText}>
-                Proveda is a trusted name in cosmetic and cleaning products, proudly established in 
-                2076 B.S. and located at Tilottama-6, Gorkatta, Rupandehi. 
-                Since our beginning, we have been committed to delivering high-quality, safe, and 
-                affordable products that bring confidence, care, and cleanliness
-                to every home.
+                Proveda Nepal is a trusted name in cosmetic and cleaning products, proudly
+                established in 2076 B.S. and located at Tilottama-6, Gorkatta, Rupandehi. Since
+                our beginning, we have been committed to delivering high-quality, safe, and
+                affordable products that bring confidence, care, and cleanliness to every home.
               </p>
               <p className={styles.aboutUsText}>
-                We take pride in being recognized as one of the best cosmetic brands in Nepal, offering 
-                a wide range of personal care and cleaning solutions that 
-                are carefully crafted to meet your everyday needs.
-              </p>
-              <p className={styles.aboutUsText}>
-                With a focus on innovation, purity, 
-                and customer satisfaction, Proveda continues to grow as a
-                reliable brand for families across the country.
+                We take pride in being recognized as one of the best cosmetic brands in Nepal,
+                offering a wide range of personal care and cleaning solutions that are carefully
+                crafted to meet your everyday needs. With a focus on innovation, purity, and
+                customer satisfaction, Proveda continues to grow as a reliable brand for families
+                across the country.
               </p>
               <p className={styles.aboutUsText}>
                 At Proveda, our mission is simple:<br/>
@@ -57,7 +55,10 @@ const Aboutus = () => {
         {/* Mission Vision Section */}
         <div className={styles.missionVisionWrapper}>
           <div className={styles.sectionHeaderDiv}>
-            <h2 className={styles.sectionTitle}>Mission and Vision</h2>
+            <h2 className={styles.sectionTitle}>
+              
+MISSION AND VISION            
+            </h2>
           </div>
 
           <div className={styles.cardsGrid}>
@@ -65,6 +66,7 @@ const Aboutus = () => {
               <div key={index} className={styles.card}>
                 <div className={styles.cardIconDiv}>
                   <img src={item.icon} alt={item.title} className={styles.cardIcon}/>
+                  <img src={item.hoverIcon} alt={item.title} className={styles.cardHoverIcon}/>
                 </div>
                 <h3 className={styles.cardTitle}>{item.title}</h3>
                 <p className={styles.cardDesc}>{item.description}</p>
@@ -76,11 +78,11 @@ const Aboutus = () => {
         {/* Team Section */}
         <div className={styles.teamWrapper}>
           <div className={styles.sectionHeaderDiv}>
-            <h2 className={styles.sectionTitle}>Our Team Members</h2>
+            <h2 className={styles.sectionTitle}>Our BODS</h2>
           </div>
 
           {/* CEO Message */}
-          <div className={styles.ceoMessageSection}>
+          {/* <div className={styles.ceoMessageSection}>
             <div className={styles.ceoImageSection}>
               <div className={styles.ceoImageDiv}>
                 <img src="/images/CEO.png" alt={data.team.chairman.name} className={styles.ceoImage}/>
@@ -107,12 +109,12 @@ const Aboutus = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
 
-          <div className={styles.separatorLine}></div>
+          {/* <div className={styles.separatorLine}></div> */}
 
-          {/* Team Members */}
-          <div className={styles.membersGrid}>
+          
+           <div className={styles.membersGrid}>
             {data.team.members.map((member, index) => (
               <div key={index} className={styles.memberCard}>
                 <div className={styles.memberImageDiv}>
@@ -125,6 +127,8 @@ const Aboutus = () => {
               </div>
             ))}
           </div>
+          {/* Team Members */}
+         
 
         </div>
       </div>

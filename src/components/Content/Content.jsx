@@ -65,7 +65,7 @@ const Content = () => {
                  
         {/* Main Content - Two Column Layout */}
         {/* Hide this section when on the product page */}
-        {location.pathname !== "/product" && (
+        {location.pathname !== "/product" || "/about"  && (
           <div className={styles.contentContainer}>
             {/* Left Column - Image/Placeholder */}
             <div className={styles.imageSection}>

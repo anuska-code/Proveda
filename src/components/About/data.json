@@ -1,19 +1,25 @@
 {
   "missionVision": [
     {
-      "title": "Mission",
-      "description": "Our Mission is to be a force for good through out the world by empowering people to improve lives with rewarding business opportunities, innovative prod-ucts, and an enriching, uplifting culture.",
-      "icon": "/images/Mission.png"
+      "title": "Vision",
+      "description": "Our Vision is to ignite a global community to realize their best selves through opport unity, enrichment, elebration, and above  all else, uplifting relationships.",
+      "icon": "/images/UpdatedVision.png",
+      "hoverIcon":"/images/Vision.png"
     },
     {
-      "title": "Vision",
-      "description": "Our Vision is to ignite a global community to realize their best selves through opportunity, enrichment, celebration, and above all else, uplifting relationships.",
-      "icon": "/images/Vision.png"
+      "title": "Mission",
+      "description": "Our mission is to empower people globally with rewarding opportunities, innovative products, and an uplifting culture to improve lives.",
+      "icon": "/images/UpdatedMission.png",
+            "hoverIcon":"/images/Mission.png"
+
+      
     },
+
     {
       "title": "Goal",
-      "description": "Our goal is to achieve sustainable growth by enhancing operational excellence, expanding nationwide, and fostering partner-ships that ensure success for both our company and clients.",
-      "icon": "/images/Goal.png"
+      "description": "Our goal is  sustainable growth through operational excellence,  nationwide expansion, and strong partnerships  ensuring success for  company and clients.",
+      "icon": "/images/UpdatedGoal.png",
+      "hoverIcon": "/images/Goal.png"
     }
   ],
   "team": {
@@ -24,13 +30,18 @@
     },
     "members": [
       {
-        "name": "Mr. Rakesh Atteya",
+        "name": "Mr. Arjun Pathak",
+        "role": "Chairperson",
+        "image": "/images/Member1.png"
+      },
+      {
+        "name": "Mr. Prakash Attreya",
         "role": "Managing Director",
         "image": "/images/Member1.png"
       },
       {
-        "name": "Mr. Bijay Kumar Yadav",
-        "role": "Director",
+        "name": "Mr.Bijay Kumar Yadav",
+        "role": " Director",
         "image": "/images/Member2.png"
       },
       {
@@ -39,7 +50,7 @@
         "image": "/images/Member3.png"
       },
       {
-        "name": "Mr. [Name]",
+        "name": "Mr. ",
         "role": "Director",
         "image": "/images/Member4.png"
       }
