@@ -57,7 +57,7 @@ const Aboutus = () => {
         {/* Mission Vision Section */}
         <div className={styles.missionVisionWrapper}>
           <div className={styles.sectionHeaderDiv}>
-            <h2 className={styles.sectionTitle}>Mission and Visio</h2>
+            <h2 className={styles.sectionTitle}>Mission and Visi</h2>
           </div>
 
           <div className={styles.cardsGrid}>
